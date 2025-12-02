@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ url_for('index') }}">← Back to chats</a>
+<section class="card">
+    <h2>#{{ thread.chat_id }} — {{ thread.title }}</h2>
+    <p>{{ thread.description }}</p>
+    <div class="messages">
+        {% if thread.messages %}
+            <ul>
+            {% for message in thread.messages %}
+                <li><strong>{{ message.author }}</strong> <em>{{ message.timestamp }}</em><br/>{{ message.text }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No messages yet.</p>
+        {% endif %}
+    </div>
+</section>
+
+<section class="card">
+    <h3>Coach the chat</h3>
+    <div class="layout-row" style="align-items:flex-start;">
+        <form class="composer" method="post" action="{{ url_for('post_message', chat_id=thread.chat_id) }}">
+            <label for="author">Name</label>
+            <input id="author" name="author" type="text" value="anon" />
+            <label for="text">Message</label>
+            <textarea id="text" name="text" required placeholder="Capture the conversation before the meme lands..."></textarea>
+            <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+                <button type="submit">Send message</button>
+                <span style="font-size:0.9rem; color:#6b7280;">Log the chat so MemeSensei has context.</span>
+            </div>
+        </form>
+        <form class="composer" method="post" action="{{ url_for('interpret_chat', chat_id=thread.chat_id) }}" enctype="multipart/form-data">
+            <label for="caption">Meme caption / description</label>
+            <textarea id="caption" name="caption" placeholder="Describe the meme or paste the punchline."></textarea>
+            <label for="meme_image">Upload meme (optional)</label>
+            <input id="meme_image" name="meme_image" type="file" accept="image/*" />
+            <button type="submit">Interpret with cheat sheet</button>
+            <p style="font-size:0.85rem; color:#475569; margin-top:0.75rem;">The contextual cheat sheet automatically retrieves the most relevant guidance for you.</p>
+        </form>
+        <div class="composer" style="background:#f1f5f9; border-radius:12px; padding:1rem;">
+            <h4 style="margin-top:0;">Cheat sheet insights</h4>
+            {% if cheat_matches %}
+                <ul>
+                    {% for match in cheat_matches %}
+                        <li><strong>{{ match.entry.title }}</strong><br/><small>{{ match.entry.guidance }}</small></li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p style="font-size:0.9rem; color:#475569;">Interpret a meme to see curated guidance from your contextual cheat sheet.</p>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% if interpretation %}
+<section class="card">
+    <h3>MemeSensei says...</h3>
+    <pre style="white-space:pre-wrap; font-size:1rem; line-height:1.5;">{{ interpretation }}</pre>
+</section>
+{% endif %}
+{% endblock %}

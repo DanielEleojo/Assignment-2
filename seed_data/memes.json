@@ -1,0 +1,82 @@
+[
+  {
+    "id": "001",
+    "name": "Distracted Boyfriend",
+    "description": "Stock photo of a man checking out another woman while his girlfriend looks annoyed.",
+    "cultural_context": "Used to depict shifting loyalty or attention, especially in consumer or pop culture trends.",
+    "interpretation": "Highlights a sudden change in preference despite existing commitments.",
+    "tags": ["relationships", "choice", "loyalty"]
+  },
+  {
+    "id": "002",
+    "name": "This Is Fine",
+    "description": "Cartoon dog calmly sitting in a burning room from KC Green's comic.",
+    "cultural_context": "Represents denial or forced positivity amid obvious crisis.",
+    "interpretation": "Signals that someone is pretending things are okay while chaos unfolds.",
+    "tags": ["denial", "crisis", "coping"]
+  },
+  {
+    "id": "003",
+    "name": "Woman Yelling at Cat",
+    "description": "Split image of a Real Housewives cast member yelling and a smug cat at a dinner table.",
+    "cultural_context": "Contrasts dramatic outrage with blasé indifference.",
+    "interpretation": "Used when someone delivers a passionate rant that meets an unfazed response.",
+    "tags": ["drama", "reaction", "contrast"]
+  },
+  {
+    "id": "004",
+    "name": "Galaxy Brain",
+    "description": "Escalating images of brains lighting up to represent increasingly absurd ideas.",
+    "cultural_context": "Satirizes convoluted logic framed as genius.",
+    "interpretation": "Calls out overthinking or contrarian takes posed as brilliant insights.",
+    "tags": ["sarcasm", "intellect", "irony"]
+  },
+  {
+    "id": "005",
+    "name": "Drake Hotline Bling",
+    "description": "Two-panel image of Drake rejecting one option and approving another.",
+    "cultural_context": "Quickly communicates preferences or priorities.",
+    "interpretation": "Visual yes/no list with a casual, humorous tone.",
+    "tags": ["preference", "yes-no", "music"]
+  },
+  {
+    "id": "006",
+    "name": "Surprised Pikachu",
+    "description": "Frame of Pikachu from the Pokémon anime with a shocked face.",
+    "cultural_context": "Used when outcomes were predictable but people act surprised.",
+    "interpretation": "Mocking feigned shock at foreseeable consequences.",
+    "tags": ["pokemon", "surprise", "predictable"]
+  },
+  {
+    "id": "007",
+    "name": "Expanding Brain",
+    "description": "Series of brain images glowing more brightly to suggest increasing intelligence.",
+    "cultural_context": "Often inverted to mock people who think contrarian takes are smart.",
+    "interpretation": "Highlights the absurdity of justifying a bad idea as enlightened.",
+    "tags": ["intelligence", "satire", "levels"]
+  },
+  {
+    "id": "008",
+    "name": "Two Buttons",
+    "description": "Cartoon of a person sweating while choosing between two red buttons.",
+    "cultural_context": "Represents a difficult choice where both options are bad or revealing.",
+    "interpretation": "Points out indecision or hypocrisy when someone wants both outcomes.",
+    "tags": ["choice", "dilemma", "hypocrisy"]
+  },
+  {
+    "id": "009",
+    "name": "Arthur Fist",
+    "description": "Close-up of the clenched fist from the Arthur cartoon.",
+    "cultural_context": "Symbolizes quiet anger or frustration being held back.",
+    "interpretation": "Signals brewing irritation despite a calm exterior.",
+    "tags": ["frustration", "anger", "restraint"]
+  },
+  {
+    "id": "010",
+    "name": "Is This a Pigeon?",
+    "description": "Anime character mistakes a butterfly for a pigeon.",
+    "cultural_context": "Used when someone misidentifies or mislabels something confidently.",
+    "interpretation": "Calls out bad takes delivered with overconfidence.",
+    "tags": ["mislabel", "confidence", "anime"]
+  }
+]

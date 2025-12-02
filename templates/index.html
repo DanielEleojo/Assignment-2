@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+    <h2>Your chats</h2>
+    {% if threads %}
+        <ul>
+        {% for thread in threads %}
+            <li>
+                <strong><a href="{{ url_for('view_chat', chat_id=thread.chat_id) }}">#{{ thread.chat_id }} — {{ thread.title }}</a></strong>
+                <br />{{ thread.description or "(no description)" }}
+                <br /><small>{{ thread.messages|length }} messages</small>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No chats yet. Create one below to get started.</p>
+    {% endif %}
+</section>
+
+<div class="layout-row">
+    <section class="card">
+        <h3>Start a chat</h3>
+        <form method="post" action="{{ url_for('create_chat') }}">
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" required />
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Optional"></textarea>
+            <button type="submit">➕ Create chat</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h3>Contextual cheat sheet</h3>
+        <p style="margin-bottom:0.75rem;">MemeSensei now grounds every interpretation with a curated cheat sheet stored at <code>data/cheatsheets.json</code>.</p>
+        <ul>
+            <li>Add new entries (title, summary, guidance, tags) to capture your team lore.</li>
+            <li>The RAG layer retrieves the closest entries for each meme and surfaces them during interpretation.</li>
+            <li>Use this card as your "contextual cheat sheet" hub—update the JSON file to keep insights fresh.</li>
+        </ul>
+        <p style="font-size:0.9rem; color:#475569;">Changes to the JSON file hot-reload automatically.</p>
+    </section>
+</div>
+{% endblock %}

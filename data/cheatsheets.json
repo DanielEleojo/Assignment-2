@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sheet-standup",
+    "title": "Sprint stand-up sarcasm",
+    "summary": "Common memes about endless stand-ups or status meetings imply impatience with ritual updates.",
+    "guidance": "Interpret as mild frustration about process overhead; suggest acknowledging the sentiment and offering a lighter agenda.",
+    "tags": ["workplace", "agile", "meetings"]
+  },
+  {
+    "id": "sheet-overwork",
+    "title": "Burnout indicators",
+    "summary": "Memes showing exhausted animals or skeletons on laptops usually poke fun at unsustainable workload.",
+    "guidance": "Call out that teammates feel overworked and encourage discussing capacity or deadline adjustments.",
+    "tags": ["burnout", "deadlines", "engineering"]
+  },
+  {
+    "id": "sheet-bugs",
+    "title": "Bug blame jokes",
+    "summary": "Spider-Man pointing or Evil Kermit memes about bugs highlight finger-pointing in QA cycles.",
+    "guidance": "Explain it as stress relief about regressions and steer toward collaborative debugging instead of blame.",
+    "tags": ["qa", "bugs", "collaboration"]
+  },
+  {
+    "id": "sheet-release",
+    "title": "Release train panic",
+    "summary": "Exploding room or \"this is fine\" memes during release week dramatize unstable builds.",
+    "guidance": "Frame it as anxiety about shipping quality; recommend triaging blockers and communicating risk openly.",
+    "tags": ["release", "devops", "risk"]
+  },
+  {
+    "id": "sheet-newbie",
+    "title": "Newcomer confusion",
+    "summary": "Baby Yoda or confused math lady memes paired with acronyms show onboarding pain.",
+    "guidance": "Interpret it as a request for clearer documentation or mentoring; suggest offering a cheat sheet or pairing session.",
+    "tags": ["onboarding", "documentation", "mentorship"]
+  },
+  {
+    "id": "sheet-celebration",
+    "title": "Victory laps",
+    "summary": "Leonardo DiCaprio cheers or confetti gifs celebrate small wins after tough sprints.",
+    "guidance": "Recognize the accomplishment and amplify the positive tone so the team keeps morale up.",
+    "tags": ["celebration", "morale", "team culture"]
+  }
+]
